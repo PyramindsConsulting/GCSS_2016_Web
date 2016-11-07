@@ -1,0 +1,102 @@
+
+/* ______________________Mobiles & Tablets______________________ */
+
+@media (min-device-width:310px)and (max-device-width:767px){
+    
+.carousel-caption {
+    right: 8%;
+    bottom: 15%;
+    z-index: 10;
+    }
+    
+.carousel-caption h3 { 
+    font-size: 1.2em;
+    line-height: 200%;
+    color: #000;
+   font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    }
+
+
+
+
+ .carousel-control {
+    position: absolute;
+    top: 33%;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 3%;
+    height: 15%;
+    background:black;
+    line-height: 60px;
+    z-index: 5;
+    opacity: 1;
+    }
+
+/*  corousel indicators */
+
+.carousel-indicators li {
+	border-radius:0;
+	width:8px;
+	height:8px;
+	 border: 0px;
+    background-color: #4a4a4a;
+}
+
+.carousel-indicators .active {
+	width:9px;
+	height:9px;
+	background:#ffea00;
+    border: 0px;
+	
+}
+    
+    .spekars img{
+    width: 40%;
+   
+}
+  
+.spekars h4{
+    font-size: 12px
+   
+}
+    
+.glyphicon-stop{
+    
+    font-size: 15px
+}
+
+.what4u h4{
+    
+    line-height: 200%;
+    font-size: 1em;
+    padding-left: 5%;
+     font-family: 'Josefin Sans', sans-serif;
+}
+    
+.speakerheading h2 {
+  
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+   padding-bottom: .5%;
+   font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2%;
+    margin-top: 2%;
+        font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+}/* _________End of Mobiles____ */
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+    <script>
+    //Validator - Empty Field
+        function isEmpty(elem) {
+            var userInput = elem.value;
+            var elemId = elem.id;
+            if (userInput.length == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    //Validating Name
+        function validName() {
+            var elem = document.getElementById("name");
+            if (isEmpty(elem)) {
+                $("#nameDiv").addClass("has-error has-feedback");
+                document.getElementById("nameOk").style.display = "none";
+                document.getElementById("nameErr").style.display = "inline";
+                return false;
+            } else {
+                $("#nameDiv").addClass("has-success has-feedback");
+                $("#nameDiv").removeClass("has-error");
+                document.getElementById("nameOk").style.display = "inline";
+                document.getElementById("nameErr").style.display = "none";
+                return true;
+            }
+        }
+    //Validating City
+        function validCity() {
+            var elem = document.getElementById("city");
+            if (isEmpty(elem)) {
+                $("#cityDiv").addClass("has-error has-feedback");
+                document.getElementById("cityOk").style.display = "none";
+                document.getElementById("cityErr").style.display = "inline";
+                return false;
+            } else {
+                $("#cityDiv").addClass("has-success has-feedback");
+                $("#cityDiv").removeClass("has-error");
+                document.getElementById("cityOk").style.display = "inline";
+                document.getElementById("cityErr").style.display = "none";
+                return true;
+            }
+        }
+     //Validating Email
+        function validEmail() {
+            var elem = document.getElementById("email");
+            if (invalidEmail(elem)) {
+                $("#emailDiv").addClass("has-error has-feedback");
+                document.getElementById("emailOk").style.display = "none";
+                document.getElementById("emailErr").style.display = "inline";
+                return false;
+            } else {
+                $("#emailDiv").addClass("has-success has-feedback");
+                $("#emailDiv").removeClass("has-error");
+                document.getElementById("emailOk").style.display = "inline";
+                document.getElementById("emailErr").style.display = "none";
+                return true;
+            }
+        }
+
+    //Validating Mobile
+        function validMobile() {
+            var elem = document.getElementById("mobile");
+            if (isEmpty(elem)) {
+                $("#mobileDiv").addClass("has-error has-feedback");
+                document.getElementById("mobileOk").style.display = "none";
+                document.getElementById("mobileErr").style.display = "inline";
+                return false;
+            } else {
+                $("#mobileDiv").addClass("has-success has-feedback");
+                $("#mobileDiv").removeClass("has-error");
+                document.getElementById("mobileOk").style.display = "inline";
+                document.getElementById("mobileErr").style.display = "none";
+                return true;
+            }
+        }
+        
+        function validateFields() {
+            var valid = true;
+            if (!validName()) {
+                $("#name").focus();
+                return false;
+            }
+            if(!validCity()){
+                $("#city").focus();
+                return false;
+            }
+            if(!validEmail()){
+                $("#email").focus();
+                return false;
+            }
+            if(!validMobile()){
+                $("#mobile").focus();
+                return false;
+            }
+            return valid;
+        }
+        //Submit Button Action
+        $("#submitBtn").click(function () {
+            
+        }); // end submit button click
+        
+        //Validator - Digit Field
+        function isNotDigit(elem) {
+            var userInput = elem.value;
+            var string = "1234567890";
+
+            if (userInput.length == 0) {
+                return false;
+            }
+
+            for (var k = 0; k < userInput.length; k++) {
+                if (string.indexOf(userInput[k]) == -1) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        //Validator - Email
+        function invalidEmail(elem) {
+            var userInput = elem.value;
+            apos = userInput.indexOf("@");
+            dotpos = userInput.lastIndexOf(".");
+            if (apos < 1 || dotpos - apos < 2) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script> 
+    
+</head>
+<body>
+    <div class="form-group" style="padding-left: 10%">
+        <h5><b> PLEASE FILL THE FORM TO WATCH LIVE </b></h5>
+    </div>
+     <form class="form-horizontal" id="form1" role="form" action="LIVE.php" method="post" onsubmit="return validateFields()">
+        <!--Participant Name-->
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Name*</label>
+            <div id="nameDiv" class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" onblur="validName()">
+                <span id="nameOk" class="glyphicon glyphicon-ok form-control-feedback" style="display: none"></span>
+                <span id="nameErr" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>                  
+            </div>
+        </div>
+        <!--City-->
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="city">City*</label>
+            <div id="cityDiv" class="col-sm-10">
+                <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" onblur="validCity()">
+                <span id="cityOk" class="glyphicon glyphicon-ok form-control-feedback" style="display: none"></span>
+                <span id="cityErr" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
+            </div>
+        </div>
+        <!--Email-->
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email*</label>
+            <div id="emailDiv" class="col-sm-10">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" onblur="validEmail()">
+                <span id="emailOk" class="glyphicon glyphicon-ok form-control-feedback" style="display: none"></span>
+                <span id="emailErr" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
+            </div>
+        </div>
+        <!--Mobile-->
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="mobile">Mobile*</label>
+            <div id="mobileDiv" class="col-sm-10">
+                <input type="text" class="form-control" id="mobile" name="tel" placeholder="Enter your mobile number" onblur="validMobile()">
+                <span id="mobileOk" class="glyphicon glyphicon-ok form-control-feedback" style="display: none"></span>
+                <span id="mobileErr" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
+            </div>
+        </div>
+        <!--Submit button-->
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>

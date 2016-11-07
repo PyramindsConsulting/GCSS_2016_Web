@@ -1,0 +1,118 @@
+body {
+    background: white;
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .sph hr {
+        border-style: solid;
+        border: 3px solid #3f3e40;
+        margin-top: 11% !important;
+        background-color: #3f3e40;
+    }
+    .speakerheading h2 {
+        font-size: 25px !important;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .sph hr {
+        border-style: solid;
+        border: 3px solid #3f3e40;
+        margin-top: 16% !important;
+        background-color: #3f3e40;
+    }
+    .speakerheading h2 {
+        font-size: 25px !important;
+        margin-bottom: 5%;
+    }
+    .what4u h4 {
+        line-height: 180% !important;
+        font-size: 1.8em !important;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+ 
+    .sph hr {
+        display: none;
+    }
+
+    .spekars img {
+        width: 45% ! important;
+    }
+    .speakerheading h2 {
+        font-size: 25px !important;
+        margin-bottom: 0;
+        padding: 1%
+    }
+    .what4u h4 {
+        line-height: 160% !important;
+        font-size: 1.6em !important;
+    }
+    .cloud {
+        width: 60%;
+        margin-left: 1%;
+        padding: -5% ! important;
+    }
+    .clouddiv {
+        margin: -10% 0% -10% 0%;
+        padding: 0px;
+    }
+    .speakerdata th,
+    td {
+        align-items: center;
+        padding-left: 25%;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .aboutlogo {
+        margin-left: 15%;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
+    .menuebottom {
+        font-size: 20px !important;
+    }
+    .bootomh2 {
+        font-size: 20px !important;
+    }
+    .menue figure h2 {
+        font-size: 16px !important;
+    }
+    .speakerdata th,
+    td {
+        align-items: center;
+        padding-left: 20%;
+        font-size: 14px !important;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .aboutspeaker {
+        font-size: 14px !important;
+    }
+    .aboutlogo {
+        margin-left: 0;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    #slider {
+        display: none;
+    }
+}

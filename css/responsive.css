@@ -1,0 +1,296 @@
+/* ______________________Larg Monitor______________________ */
+
+
+
+@media screen and (min-width: 1020px){
+    
+.carousel-caption {
+    right: 8%;
+    bottom: 20%;
+    z-index: 10;
+    }
+    
+.carousel-caption h3 { 
+    font-size: 2.1em;
+    line-height: 200%;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    }
+
+    
+    
+.carousel-control {
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    left: 0;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    width: 3%;
+    height: 15%;
+    background:black;
+    line-height: 90px;
+    z-index: 5;
+    opacity: 1;
+    }
+
+/*  corousel indicators */
+
+.carousel-indicators li {
+	border-radius:0;
+	width:15px;
+	height:15px;
+	 border: 0px;
+    background-color: #4a4a4a;
+}
+
+.carousel-indicators .active {
+	width:17px;
+	height:17px;
+	background:#ffea00;
+    border: 0px;
+	
+}
+    
+    
+    
+    
+}/* _________End of Larg____ */
+
+/* ______________________Medioum Monitor______________________ */
+
+@media screen  and (max-width: 1019px){
+    
+.carousel-caption {
+    right: 8%;
+    bottom: 15%;
+    z-index: 10;
+    }
+    
+.carousel-caption h3 { 
+    font-size: 2em !important;
+    line-height: 200%;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    }
+
+    
+    
+    
+.carousel-control {
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 3%;
+    height: 15%;
+    background:black;
+    line-height: 70px;
+    z-index: 5;
+    opacity: 1;
+    }
+
+/*  corousel indicators */
+
+.carousel-indicators li {
+	border-radius:0;
+	width:10px;
+	height:10px;
+	 border: 0px;
+    background-color: #4a4a4a;
+}
+
+.carousel-indicators .active {
+	width:12px;
+	height:12px;
+	background:#ffea00;
+    border: 0px;
+	
+}
+    
+
+    
+} /* _________End of Medioum____ */
+
+
+/* ______________________Mobiles & Tablets______________________ */
+
+@media screen and (max-width: 767px){
+   
+.carousel-caption {
+    right: 8%;
+    bottom: 15%;
+    z-index: 10;
+    }
+    
+.carousel-caption h3 { 
+    font-size: 1em !important;
+    line-height: 200%;
+    color: #000;
+   font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    }
+
+
+
+
+ .carousel-control {
+    position: absolute;
+    top: 33%;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 3%;
+    height: 15%;
+    background:black;
+    line-height: 60px;
+    z-index: 5;
+    opacity: 1;
+    }
+
+/*  corousel indicators */
+
+.carousel-indicators li {
+	border-radius:0;
+	width:8px;
+	height:8px;
+	 border: 0px;
+    background-color: #4a4a4a;
+}
+
+.carousel-indicators .active {
+	width:9px;
+	height:9px;
+	background:#ffea00;
+    border: 0px;
+	
+}
+    
+    .spekars img{
+    width: 40%;
+   
+}
+  
+.spekars h4{
+    font-size: 12px
+   
+}
+    
+.glyphicon-stop{
+    
+    font-size: 15px
+}
+
+.what4u h4{
+    
+    line-height: 200%;
+    font-size: 1em;
+    padding-left: 5%;
+     font-family: 'Josefin Sans', sans-serif;
+}
+    
+.speakerheading h2 {
+  
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+   padding-bottom: .5%;
+   font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2%;
+    margin-top: 2%;
+        font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+}/* _________End of Mobiles____ */
+
+
+
+
+/* _____________________________________________ About Page ____________________________ */
+
+
+.section1{
+    
+    margin: 2% 0% 2% 0%;
+    padding: 2%;
+    
+}
+
+.aboutcontent{
+     font-family: 'Josefin Sans', sans-serif;
+    line-height: 200%;
+    text-align: justify;
+    padding: 2% 12% 0% 0%  ;
+    font-size: 1.8em;
+    
+}
+
+
+
+/* _____________________________________________ Speakers Page ____________________________ */
+
+.spekers8 img {
+    opacity: .5;
+    padding: 2%;
+    
+}
+.spekers8 img:hover {
+    opacity: 1.0;
+    
+}
+
+/* _____________________________________________ Acc Page ____________________________ */
+
+.aboutaccom{
+    
+      font-family: 'Josefin Sans', sans-serif;
+    line-height: 150%;
+    text-align: justify;
+    font-size: 1.6em;
+    padding: 3%
+    
+}
+/*
+body {
+  background: white;    
+}
+*/
+
+/*
+@media screen and (min-width: 1020px)  Desktop  {
+  body {
+    background: red;
+  }
+}
+*/
+
+/*
+@media screen  and (max-width: 1019px)  Tablet  {
+  body {
+    background: blue;
+  }
+}
+*/
+
+/*
+@media screen and (max-width: 767px)  Mobile  {
+  body {
+    background: green;
+  }
+}*/
